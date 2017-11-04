@@ -1,0 +1,62 @@
+.Form {
+	margin: 2em auto;
+	width: 100%;
+	max-width: 620px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+
+	&-header {
+		width: 100%;
+	}
+
+	&-headline {
+		margin: 0 0 0.25em 0;
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+
+	&-information {
+		word-break: break-all;
+		margin: 0;
+	}
+
+	&-content {
+		width: 100%;
+		margin: 2em 0 0 0;
+	}
+
+	&-control {
+		border-radius: 4px;
+		height: 44px;
+		line-height: 44px;
+		padding: 0 15px;
+		border: 1px solid $color-glacier-grey;
+		font-size: 1em;
+	}
+}
+
+@include bp-medium {
+	.Form {
+		margin: 4em auto;
+		border-radius: 10px;
+		width: 80%;
+		box-shadow: 0 2px 18px -1px rgba($color-black, 0.3);
+		padding: 60px;
+
+		&-content {
+			max-width: 55%;
+			margin: 0 auto;
+			margin: 2.5em auto 0 auto;
+		}
+	}
+}
+
+@include bp-large {
+	.Form {
+		width: 60%;
+	}
+}
