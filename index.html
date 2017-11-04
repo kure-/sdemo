@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Slevomat demo</title>
+		<meta charset="UTF-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="author" content="Ondřej Kohout" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="./dist/application.css">
+	</head>
+	<body>
+		<section id="content">
+			<div class="Header">
+			</div>
+			<div class="Gallery" id="gallery">
+			</div>
+		</section>
+
+		<script id="gallery-template" type="text/x-handlebars-template">
+			<a href="{{data.image.large.src}}" title="{{data.title}}" target="_blank" class="Gallery-link">
+				<img src="{{data.image.medium.src}}" srcset="{{#each data.image}} {{src}} {{size}}w, {{/each}}"  sizes="{{data.srcSet}}" class="Gallery-image" alt="{{data.title}}" />
+				{{#if data.shouldHaveLoadMore}}
+					<span class="Gallery-loadMore">
+						<span class="Gallery-loadMoreText">
+							Další fotky
+						</span>
+					</span>
+				{{/if}}
+			</a>
+		</script>
+		<script src="./dist/application.js"></script>
+	</body>
+</html>
