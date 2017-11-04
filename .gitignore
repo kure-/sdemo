@@ -6,3 +6,4 @@ gulp.local.json
 /.gtm/
 .vscode
 .vs
+dist/
