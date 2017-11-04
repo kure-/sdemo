@@ -119,5 +119,3 @@ function loadPhotos() {
 	});
 	galleryElement.appendChild(galleryGroup);
 };
-
-loadPhotos();
