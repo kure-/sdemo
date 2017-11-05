@@ -12,3 +12,4 @@ npm install
 ```
 npm start
 ```
+The project is powered with browsersync, so if for any reason your browser doesn't open automatically, the localhost should be up and running at http://localhost:3030/
