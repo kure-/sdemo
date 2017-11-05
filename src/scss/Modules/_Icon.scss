@@ -1,4 +1,4 @@
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" Icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;
 	speak: none;
@@ -13,18 +13,44 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bulb {
-	&:before {
-	content: $icon-bulb;
+.Icon {
+	flex-shrink: 0;
+
+	&-bulb {
+		&:before {
+			content: $icon-bulb;
+		}
 	}
-}
-.icon-eye {
-	&:before {
-	content: $icon-eye;
+
+	&-eye {
+		&:before {
+			content: $icon-eye;
+		}
 	}
-}
-.icon-eye-blocked {
-	&:before {
-	content: $icon-eye-blocked;
+
+	&-eyeBlocked {
+		&:before {
+			content: $icon-eye-blocked;
+		}
+	}
+
+	&--tarnishedSilver {
+		color: $color-tarnished-silver;
+	}
+
+	&--small {
+		font-size: 16px;
+	}
+
+	&--medium {
+		font-size: 20px;
+	}
+
+	&--large {
+		font-size: 24px;
+	}
+
+	&--spacedRightSmall {
+		margin-right: 0.25em;
 	}
 }

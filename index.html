@@ -47,15 +47,26 @@
 					<p class="Form-information text-center">pro uživatele <strong>marcelka@gmail.com</strong></p>
 				</div>
 				<div class="Form-content">
-					<form id="form-set-new-password" action='/' method="GET">
-						<div class="Form-group Form-group--">
-							<input type="password" placeholder="Zadejte nové heslo" name="password" id="password" class="Form-control" />
+					<form id="form-set-new-password" action='/' method="POST">
+						<div class="Form-group">
+							<input type="password" placeholder="Zadejte nové heslo" name="password" id="password" class="Form-control Form-control--withActionBtn" title="Heslo musí obsahovat nejméně 8 znaků" pattern=".{8,}" required />
+							<button id="toggle-password" class="Btn Btn--togglePassword Btn--hasIcon Btn--inputActionBtn Btn--transparentBrandedHover">
+								<span class="Icon Icon-eye Icon--tarnishedSilver Icon--medium text-center"></span>
+							</button>
+						</div>
+						<div class="Form-action">
+							<button type="submit" class="Btn Btn--branded Btn--rounded" title="Nastavit nové heslo">
+								Nastavit nové heslo
+							</button>
 						</div>
 					</form>
-				</div>
-				<div class="Form-footer">
+					<div class="Form-note Form-note--spacedTopLarge">
+						<em class="Icon Icon-bulb Icon--spacedRightSmall Icon--large Icon--tarnishedSilver"></em>
+						Dobré heslo je zapamatovatelné, ale&nbsp;zároveň není příliš krátké.
+					</div>
 				</div>
 			</div>
 		</section>
+		<script src="./dist/application.js"></script>
 	</body>
 </html>
