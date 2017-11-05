@@ -8,3 +8,25 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'SFUI Display';
+	src:  url('#{$san-francisco-font-path}/SanFranciscoDisplay-Regular.eot?xck6mn');
+	src:  url('#{$san-francisco-font-path}/SanFranciscoDisplay-Regular.eot?xck6mn#iefix') format('embedded-opentype'),
+		url('#{$san-francisco-font-path}/SanFranciscoDisplay-Regular.ttf?xck6mn') format('truetype'),
+		url('#{$san-francisco-font-path}/SanFranciscoDisplay-Regular.woff?xck6mn') format('woff'),
+		url('#{$san-francisco-font-path}/SanFranciscoDisplay-Regular.svg?xck6mn#SanFranciscoDisplay-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFUI Display';
+	src:  url('#{$san-francisco-font-path}/SanFranciscoDisplay-Bold.eot?xck6mn');
+	src:  url('#{$san-francisco-font-path}/SanFranciscoDisplay-Bold.eot?xck6mn#iefix') format('embedded-opentype'),
+		url('#{$san-francisco-font-path}/SanFranciscoDisplay-Bold.ttf?xck6mn') format('truetype'),
+		url('#{$san-francisco-font-path}/SanFranciscoDisplay-Bold.woff?xck6mn') format('woff'),
+		url('#{$san-francisco-font-path}/SanFranciscoDisplay-Bold.svg?xck6mn#SanFranciscoDisplay-Regular') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}

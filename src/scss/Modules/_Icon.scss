@@ -38,6 +38,10 @@
 		color: $color-tarnished-silver;
 	}
 
+	&--glacierGrey {
+		color: $color-glacier-grey;
+	}
+
 	&--small {
 		font-size: 16px;
 	}
@@ -52,5 +56,9 @@
 
 	&--spacedRightSmall {
 		margin-right: 0.25em;
+	}
+
+	&--spacedTopTiny {
+		margin-top: 0.15em;
 	}
 }

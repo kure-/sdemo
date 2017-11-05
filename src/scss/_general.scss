@@ -5,6 +5,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: $general-font-family;
 	font-size: 16px;
+	background: $color-boysenberry-shadow;
 }

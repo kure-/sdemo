@@ -1,13 +1,14 @@
 .Form {
 	margin: 2em auto;
 	width: 100%;
-	max-width: 620px;
+	max-width: 623px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	padding: 30px;
 	color: $color-text;
+	background-color: $color-white;
 
 	&-header {
 		width: 100%;
@@ -15,7 +16,7 @@
 
 	&-headline {
 		margin: 0 0 0.25em 0;
-		font-size: 30px;
+		font-size: 32px;
 		line-height: 36px;
 	}
 
@@ -39,7 +40,7 @@
 	}
 
 	&-control {
-		border-radius: 4px;
+		border-radius: 5px;
 		height: 44px;
 		line-height: 44px;
 		padding: 0 15px;
@@ -70,7 +71,7 @@
 		}
 
 		&--withActionBtn {
-			border-radius: 4px 0 0 4px;
+			border-radius: 5px 0 0 5px;
 			border-right: 0;
 		}
 	}
@@ -81,8 +82,8 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		color: $color-tarnished-silver;
-		font-size: 13px;
-		line-height: 18px;
+		font-size: 14px;
+		line-height: 20px;
 
 		&--spacedTopLarge {
 			margin-top: 3em;
@@ -93,9 +94,9 @@
 @include bp-medium {
 	.Form {
 		margin: 4em auto;
-		border-radius: 10px;
+		border-radius: 8px;
 		width: 80%;
-		box-shadow: 0 2px 18px -1px rgba($color-black, 0.4);
+		box-shadow: 0 2px 7px 1px rgba($color-black, 0.35);
 		border: 1px solid $color-wayward-winds;
 		padding: 60px;
 
@@ -113,7 +114,7 @@
 
 		&-note {
 			&--spacedTopLarge {
-				margin-top: 5em;
+				margin-top: 5.85em;
 			}
 		}
 	}
