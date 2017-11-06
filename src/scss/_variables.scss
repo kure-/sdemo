@@ -35,12 +35,12 @@ $gridSpacing: (
  * Fonts
  */
 $general-font-family: SFUI Display, Arial, Helvetica, sans-serif;
-$san-francisco-font-path: "/fonts/SanFranciscoDisplay" !default;
+$san-francisco-font-path: "../fonts/SanFranciscoDisplay" !default;
 
 /**
  * icomoon is being used as the Avocode couldn't get any svg directly.
  */
-$icomoon-font-path: "/fonts/icomoon" !default;
+$icomoon-font-path: "../fonts/icomoon" !default;
 $icon-bulb: "\e900";
 $icon-eye: "\e9ce";
 $icon-eye-blocked: "\e9d1";
