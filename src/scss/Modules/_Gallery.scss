@@ -3,7 +3,7 @@
 	display: block;
 
 	&-group {
-		margin-left: -map-get($gridSpacing, small);
+		margin-left: map-get($gridSpacing, small) * -1;
 		&:after {
 			display: block;
 			content: "";
